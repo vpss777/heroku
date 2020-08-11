@@ -15,12 +15,12 @@
 			"description": "Rclone config to mount in one line, replace line breaks with \"\\n\"",
 			"required": false
 		},
-		"RCLONE_SA": {
-			"description": "Rclone config to sa",
-			"required": false
-		},
 		"RCLONE_DESTINATION": {
 			"description": "Path to store your file in your Rclone drive. Must start with a forward slash.",
+			"required": false
+		},
+		"OTHER_DRIVE": {
+			"description": "Extend rclone config.",
 			"required": false
 		}
 	},

@@ -7,7 +7,7 @@ LIGHT_GREEN_FONT_PREFIX="\033[1;32m"
 FONT_COLOR_SUFFIX="\033[0m"
 INFO="[${LIGHT_GREEN_FONT_PREFIX}INFO${FONT_COLOR_SUFFIX}]"
 
-echo -e "$(date +"%m/%d %H:%M:%S") ${INFO} ${filePath} Download error or stop, start deleting files..." >> ./downloads/downlog.txt
+echo -e "$(date +"%m/%d %H:%M:%S") ${INFO} Download error or stop, start deleting files..."
 
 if [ $2 -eq 0 ]; then
     exit 0
@@ -18,4 +18,4 @@ elif [ -e "${topPath}.aria2" ]; then
 fi
 find "${topPath}" ! -path "${topPath}" -depth -type d -empty -exec rm -vrf {} \;
 
-echo -e "$(date +"%m/%d %H:%M:%S") ${INFO} ${filePath} Download error or stop, start deleting files finish" >> ./downloads/downlog.txt
+echo -e "$(date +"%m/%d %H:%M:%S") ${INFO} Download error or stop, start deleting files finish"
